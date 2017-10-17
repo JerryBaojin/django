@@ -3,8 +3,8 @@ from django.http import HttpResponse
 from django.shortcuts import render
  
 def index(request):
-    return HttpResponse(u"hellow py!")
-
+   # return HttpResponse(u"hellow py!")
+	return render(request,'home.html')
 
 def add(request):
 	a=request.GET['a']
